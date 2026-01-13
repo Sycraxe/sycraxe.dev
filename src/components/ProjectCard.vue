@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ModrinthProject } from '@/types/ModrinthProject';
+import type { ModrinthProject } from '@/types/ModrinthProject';
 
 const props = defineProps<{
 	project: ModrinthProject

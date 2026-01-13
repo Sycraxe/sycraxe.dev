@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { ref } from 'vue';
-	import { ModrinthProject } from './types/ModrinthProject';
+	import type { ModrinthProject } from './types/ModrinthProject';
 	import ProjectCard from './components/ProjectCard.vue';
 
 	const projects = ref<ModrinthProject[]>([]);
