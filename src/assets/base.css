@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root
+{
+  --sd-color-dark-1: #1a1a1a;
+  --sd-color-dark-2: #262626;
+  --sd-color-dark-3: #404040;
+  --sd-color-dark-4: #949494;
+
+  --sd-color-light: #E8E2EF;
+
+  --sd-color-accent: #D3D3FF;
+}
+
+:root
+{
+  --color-background: var(--sd-color-dark-1);
+  --color-text: var(--sd-color-light);
+  --color-emphasis: var(--sd-color-accent);
+
+  --color-button: var(--sd-color-accent);
+  --color-button-hover: var(--sd-color-light);
+  --color-button-text: var(--sd-color-dark-1);
+
+  --color-content-box: var(--sd-color-dark-2);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body
+{
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 
+		Inter,
+		Arial,
+		sans-serif;
+    font-size: 1.2em;
+}

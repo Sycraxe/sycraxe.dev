@@ -1,0 +1,109 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+#app
+{
+	margin: auto;
+	padding: 20px 0;
+	width: 860px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+/* Basic elements */
+
+h1
+{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h2, h3
+{
+    font-weight: inherit;
+    font-weight: 600;
+}
+
+h2
+{
+    font-size: 1.4em;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+.material-symbols-outlined
+{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+
+/* User-defined elements */
+
+.links, .badges
+{
+    display: flex;
+    gap: 8px
+}
+
+.links > a, .badges > p
+{
+    display: flex;
+    gap: 8px;
+    padding: 4px 8px;
+}
+
+.links > a
+{
+    border-radius: 8px;
+    align-items: center;
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+}
+
+.links > a:hover
+{
+    background-color: var(--color-button-hover);
+}
+
+
+/* Zones */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+main, #description, #projects
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main
+{
+    gap: 32px;
+}
+
+#description
+{
+    gap: 8px;
+}
+
+h1 > span /* .dev emphasis */
+{
+    color: var(--color-emphasis);
+}
+
+#projects
+{
+    gap: 24px;
+}
