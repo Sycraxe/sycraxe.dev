@@ -4,6 +4,7 @@
 	import ProjectCard from './components/ProjectCard.vue';
 
 	const projects = ref<ModrinthProject[]>([]);
+	const search = ref('');
 
 	(async () => {
 		const response = await fetch('https://api.modrinth.com/v2/user/sycraxe/projects');
@@ -34,12 +35,14 @@
 		</section>
 		<section id="projects">
 			<h2>Projects</h2>
-			<ProjectCard v-for="project in projects" :project></ProjectCard>
+			<div>
+				<input v-model="search" placeholder="Search project...">
+			</div>
+			<ProjectCard v-for="project in projects" :project :search="new RegExp(search, 'gi')"></ProjectCard>
+			<p v-if="projects.filter((project) => project.title.match(new RegExp(search, 'gi'))).length == 0">No corresponding projects found.</p>
 		</section>
 	</main>
 	<footer>
 		<p>&copy; 2025 Sycraxe</p>
 	</footer>
 </template>
-
-<style scoped></style>

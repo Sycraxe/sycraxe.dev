@@ -23,6 +23,12 @@
   --color-button-text: var(--sd-color-dark-1);
 
   --color-content-box: var(--sd-color-dark-2);
+
+  --color-input-border: var(--sd-color-dark-2);
+  --color-input-selected-border: var(--sd-color-accent);
+
+  --color-selection: var(--sd-color-accent);
+  --color-selection-text: var(--sd-color-dark-1);
 }
 
 *
