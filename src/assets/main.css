@@ -1,6 +1,11 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/minecraft.woff2') format('woff2');
+}
+
 #app
 {
 	margin: auto;
@@ -8,7 +13,6 @@
 	width: 860px;
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
 }
 
 /* Basic elements */
@@ -107,38 +111,4 @@ button
 .links > a:hover, button:hover
 {
     background-color: var(--color-button-hover);
-}
-
-/* Zones */
-
-header
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-main, #description, #projects
-{
-    display: flex;
-    flex-direction: column;
-}
-
-main
-{
-    gap: 32px;
-}
-
-#description
-{
-    gap: 8px;
-}
-
-h1 > span /* .dev emphasis */
-{
-    color: var(--color-emphasis);
-}
-
-#projects
-{
-    gap: 24px;
 }
