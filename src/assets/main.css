@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Minecraft';
-    src: url('src/assets/minecraft.woff2') format('woff2');
+    src: url('/minecraft.woff2') format('woff2');
 }
 
 #app

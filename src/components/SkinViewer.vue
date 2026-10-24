@@ -12,7 +12,7 @@ onMounted(() => {
     canvas: canvas.value,
     width: 200,
     height: 280,
-    skin: "src/assets/skin.png"
+    skin: "/skin.png"
   });
 
   viewerInstance.animation = new IdleAnimation();
