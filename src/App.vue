@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import type { ModrinthProject } from './types/ModrinthProject';
+import type { Project } from './types/Project';
+
 import ProjectCard from './components/ProjectCard.vue';
 import SkinViewer from "@/components/SkinViewer.vue";
 
-const projects = ref<ModrinthProject[]>([]);
-const search = ref('');
+import p from '@/data/projects.json'
 
-(async () => {
-  const response = await fetch('https://api.modrinth.com/v2/user/sycraxe/projects');
-  if (!response.ok) return;
-  projects.value = await response.json() as ModrinthProject[];
-})()
+const projects = ref<Project[]>(p);
+const search = ref('');
 </script>
 
 <template>
@@ -116,6 +113,10 @@ main
 .contact > a:hover > p, a:hover.link > .link-text
 {
   text-decoration: underline;
+}
+
+footer {
+  padding: 16px 0 0 0;
 }
 
 </style>
