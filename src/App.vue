@@ -23,8 +23,8 @@ const search = ref('');
           Someone who spends their spare time creating things
         </p>
         <p class="description-link">
-          Currently works in
-          <a class="link" href="https://github.com/Sycraxe">
+          Currently volunteers in the
+          <a class="link" href="https://modrinth.com/server/aero-server">
             <span class="material-symbols-outlined">link</span>
             <span class="link-text">AeroSMP</span>
           </a>
